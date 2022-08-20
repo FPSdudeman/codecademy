@@ -13,12 +13,12 @@ num_pizzas = len(toppings)
 print("We sell", num_pizzas, "different kinds of pizza!")
 
 # Empty list and loop to create a 2D list instead of making by hand
-"""
-# Removing and replacing with zip() fucntion below after progressing a little further
-pizza_and_prices = []
-for i in range(len(toppings)):
-  pizza_and_prices += [[prices[i], toppings[i]]]
-"""
+
+# # Removing and replacing with zip() fucntion below after progressing a little further
+# pizza_and_prices = []
+# for i in range(len(toppings)):
+#   pizza_and_prices += [[prices[i], toppings[i]]]
+
 
 # Creating 2D list -- Note that 2D list now is with tuples compared to the above loop output
 pizza_and_prices = zip(prices, toppings)
